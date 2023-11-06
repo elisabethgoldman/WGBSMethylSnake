@@ -3,12 +3,11 @@
 
 # MethylSnake
 
-A Snakemake pipeline for RRBS data analysis
+Modified Snakemake pipeline for WGBS data analysis
 
 ## Overview
 
-This pipeline implements a DNA methylation data analysis workflow. Currently, it is taylored toward RRBS data analysis but it can be easity tweaked to support other data types. 
-
+This pipeline implements a DNA methylation data analysis workflow originally tailored to RRBS but updated to use with WGBS data. 
 Starting from raw reads in FASTQ format, it runs basic QC reporting, reads trimming, alignment, methylation extraction, filtering of incomplete conversions and differential methylation calls both at single base resolution and fixed-size tiles. Moreover, it runs basic downstream  genomic annotation. 
 
 The final output of the pipeline are a set of files for alignment, detected features, annotation and reports in a variety of formats (bam, bed, pdf, html). R objects are also returned for retrospective inspection and further downstream analysis.
